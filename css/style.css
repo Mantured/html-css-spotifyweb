@@ -36,3 +36,8 @@ section.navbar-mediaplay{
     background-color: blueviolet;
 }
 
+section.lateral-navbar img{
+    padding:1rem;
+    width: 100%;
+}
+
