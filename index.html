@@ -22,30 +22,41 @@
 </head>
 <body>
     <main>
-        <section class="lateral-navbar">
-            <img src="img/logo.svg" alt="">
+        <section class="lateral-navbar flex">
+
             <nav class="nav-head">
+            <img src="img/logo.svg" alt="">
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-home"></i></span>Home</li>
                     <li><span class="fa-li"><i class="fas fa-search"></i></span>Cerca</li>
                     <li><span class="fa-li"><i class="fas fa-grip-lines-vertical"></i></span>La tua libreria</li>
                 </ul>
+                <div class="playlist">
+                    <h4>playlist</h4><!-- uppercase-->
+                    <div id="btn-playlist" class="flex">
+                        <i class="fas fa-plus"></i>
+                        <p>Crea Playlist</p>
+                    </div>
+    
+                    <!-- <i class="fas fa-plus-square"></i><span>Crea Playlist</span> -->
+    
+                    <nav class="nav-playlist">
+                        <ul>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                        </ul>
+                    </nav>
+                </div>
+
+
             </nav>
-            <div class="playlist">
-                <h4>playlist</h4><!-- uppercase-->
-                <i class="fas fa-plus-square"></i><span>Crea Playlist</span>
-                <nav class="nav-playlist">
-                    <ul>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                    </ul>
-                </nav>
-            </div>
+
+            
             <div class="navbottom">
                 <i class="fas fa-arrow-circle-down"></i> <span> Installa app</span>
                 <!-- span che potrebbero essere p o addirittura h5 -->

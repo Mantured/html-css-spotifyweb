@@ -6,16 +6,34 @@
     font-family: 'Gotham', sans-serif;
 }
 
+/* comandi generici */
+
+.flex{
+    display: flex;
+}
+
 main{
     width: 100%;
     height: 92vh;
     display:flex;
 }
 
+/* section.lateral-navbar ul li,
+section.lateral-navbar ul li{
+    font-size: 1rem;
+ */
+
+
 section.lateral-navbar{
     width: 200px;
     height: 100%;
     background-color: lime;
+    line-height: 2rem;
+    /* modifiche */
+
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 section.box{
@@ -41,3 +59,30 @@ section.lateral-navbar img{
     width: 100%;
 }
 
+div.playlist{
+    margin-left: 20px;
+}
+
+/* da modificare in comando generico */
+div.playlist h4{
+    text-transform: uppercase;
+    /* margin-left: 20px; */
+}
+
+nav.nav-head ul{
+    margin-bottom: .8rem; /* che sia il caso di creare un comando generico? */
+}
+
+#btn-playlist > i{
+    border: 1px solid black; /*! da cambiare */
+    background-color: grey;font-size: 1.5rem;
+    padding: .6rem;
+    margin-right: .6rem;
+}
+
+#btn-playlist{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .8rem;
+}
