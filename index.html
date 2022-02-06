@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon spotify -->
-    <link href="img/spotify-brands.svg" rel="icon" type="image/x-icon" />
+    <link href="img/favicon.ico" rel="icon" type="favicon">
 
     <!-- Font Ghotam! via cdn-->
     <link href="http://fonts.cdnfonts.com/css/gotham?styles=17581,17583,17585,17586,17588,17589,17592,17590,17594" rel="stylesheet">
@@ -24,18 +24,20 @@
     <main>
         <section class="lateral-navbar flex">
 
+            <!-- posso decidere se giocare con i margini o inlgobare tutto su un contenitore e dare a lui  il padding -->
+
             <nav class="nav-head">
-            <img src="img/logo.svg" alt="">
-                <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-home"></i></span>Home</li>
-                    <li><span class="fa-li"><i class="fas fa-search"></i></span>Cerca</li>
-                    <li><span class="fa-li"><i class="fas fa-grip-lines-vertical"></i></span>La tua libreria</li>
+                <img  id="logo"  src="img/logo.svg" alt="Logo Spotify">
+                <ul>
+                    <li><img src="img/home.svg" alt=""><a href="#">Home</a></li>
+                    <li><img src="img/search.svg" alt=""><a href="#">Cerca</a></li>
+                    <li><img src="img/libreria.svg" alt=""><a href="#">La tua libreria</a></li>
                 </ul>
                 <div class="playlist">
                     <h4>playlist</h4><!-- uppercase-->
                     <div id="btn-playlist" class="flex">
                         <i class="fas fa-plus"></i>
-                        <p>Crea Playlist</p>
+                        <p> Crea Playlist</p>
                     </div>
     
                     <!-- <i class="fas fa-plus-square"></i><span>Crea Playlist</span> -->
@@ -58,10 +60,14 @@
 
             
             <div class="navbottom">
-                <i class="fas fa-arrow-circle-down"></i> <span> Installa app</span>
+                <div class="download-app">
+                <i class="fas fa-arrow-circle-down"></i> <p>Installa app</p>
                 <!-- span che potrebbero essere p o addirittura h5 -->
                 <!-- linea border bot -->
-                <i class="fas fa-user-circle"></i> <span>Jon Doe</span>
+                <div class="users">
+                    <i class="fas fa-user-circle"></i> <p>Jon Doe</p>
+                </div>
+                
             </div>
 
             
