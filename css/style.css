@@ -71,14 +71,18 @@ section.navbar-mediaplay{
 
 #logo{
     padding:1rem;
-    width: 80%;
+    width: 180px;
 }
 
 
 /* div */
 
-div.playlist{
-    margin-left: 20px;
+div.playlist, div.navbottom, .nav-head ul li{
+    padding-left: 1rem;
+}
+
+.nav-playlist ul li{
+    padding-left: 1rem;
 }
 
 /* da modificare in comando generico */
@@ -86,6 +90,30 @@ div.playlist h4{
     text-transform: uppercase;
     color: white;
     /* margin-left: 20px; */
+}
+
+div.download-app{
+    height: 30px;
+    width: 95%;
+    background-color: rgb(97, 19, 19);
+    border-bottom: 1px solid blue;}
+
+div.download-app img{
+    width: 5%;
+    vertical-align: middle;
+}
+
+div.users{
+    height: 60px;
+    width: 95%;
+}
+
+div.users img{
+    width: 10%;
+    vertical-align: middle;
+    /* border: solid 1px yellow; */
+    border-radius: 100%;
+    background-color: grey;
 }
 
 /* nav */
@@ -104,6 +132,10 @@ nav.nav-head ul li a{
     text-decoration: none;
     /* color: whitesmoke; */
     color:rgb(109, 109, 109);
+}
+
+nav.nav-playlist li{
+    list-style-type: none;
 }
 
 /* Hover */
