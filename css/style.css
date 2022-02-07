@@ -27,6 +27,11 @@ main{
     display:flex;
 }
 
+h4{
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
 h5{
     display: inline;
     color: white;
@@ -155,6 +160,19 @@ div.users img{
     border-radius: 100%;
     background-color:rgb(109, 109, 109);
 }
+
+
+div.header{
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.header h4{
+    padding: 0 .5rem;
+}
+
+
 
 div.replay{
     align-items: center;
