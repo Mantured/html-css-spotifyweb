@@ -92,25 +92,42 @@
     <footer>
         <!-- nav bar media player che sia bloccata  -->
         <section class="navbar-mediaplay flex">
-            <div class="replay">
+
+            <div class="replay flex">
                 <img src="img/sinister.jpeg" alt="Sinister Album"><!-- img album  -->
-
-                <!--  <div class="info flex"></div> -->
-                <h5>Sinister</h5><!-- song album name -->
-                <p>Brano Nome</p>
-                
-
+                <span class="info flex">
+                    <h5>Sinister</h5><!-- song album name -->
+                    <p>Brano Nome</p>
+                </span>   
                 <i class="far fa-heart"></i><!-- like  -->
                 <i class="far fa-folder"></i><!-- folder -->
             </div>
-            <div class="mediacontrol">
+
+            <div class="mediacontrol flex">
+
                 <!-- random indietro play next repeat -->
+                <span class="control flex">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo"></i>
+                </span>
+
                 <!-- time line -->
+                <div class="time flex">
+                    <p>0:25</p>
+                    <span class="timeline flex">
+                        <span id="timeline-progress"></span>
+                    </span>
+                    <p>4:35</p>
+                </div>
+
             </div>
             <div class="vol">
-                <!-- in lista -->
-                <!-- dispositivo riprod -->
-                <!-- volume barra -->
+                <i class="fas fa-list"></i><!-- in lista -->
+                <i class="fas fa-desktop"></i><!-- dispositivo riprod -->
+                <i class="fas fa-volume-up"></i><!-- volume barra -->
             </div>
             
 

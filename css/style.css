@@ -155,14 +155,64 @@ div.users img{
     background-color:rgb(109, 109, 109);
 }
 
-div.replay img{
-    width: 50px;
-    vertical-align: middle;
+div.replay{
+    align-items: center;
+   /*  justify-content: space-between; */
+    line-height: 1rem;
 }
 
-/* div.info{
+div.replay *{
+    margin-right: 1rem;
+}
+
+div.replay img{
+    width: 50px;
+    margin-left:1rem ;
+ /*    vertical-align: middle; */ /* se metto flex non serve non è inline */
+}
+
+div.mediacontrol{
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-} */
+}
+
+div.time{
+    align-items: center;
+}
+
+
+span.timeline{
+    width: 400px;
+    height: 3px;
+    background-color: rgb(109, 109, 109);
+    margin: 0 1em;
+}
+
+span#timeline-progress{
+    width: 20%;
+    background-color: white;
+}
+
+span.info{
+    flex-direction: column;
+}
+
+span.control{
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+span.control i{
+    color:white;
+    font-size: 1em;
+    padding:0 1rem;
+}
+span.control i:nth-child(3){
+    font-size: 2em;
+}
+
+
 
 /* nav */
 
