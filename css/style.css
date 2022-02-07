@@ -92,6 +92,7 @@ section.navbar-mediaplay{
     background-color: rgb(40, 40, 40);
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 
 }
 
@@ -167,7 +168,7 @@ div.replay *{
 
 div.replay img{
     width: 50px;
-    margin-left:1rem ;
+/*     margin-left:1rem ; */
  /*    vertical-align: middle; */ /* se metto flex non serve non è inline */
 }
 
@@ -181,17 +182,39 @@ div.time{
     align-items: center;
 }
 
+div.options{
+    align-items: center;
+}
+
+span.vol{
+    width: 100px;
+    height: 3px;
+    background-color:rgb(109, 109, 109);
+    border-radius: 1em;
+    
+}
+
+
+div.options i{
+    padding:0 .5rem;
+    color:white;
+}
+
+
 
 span.timeline{
     width: 400px;
     height: 3px;
     background-color: rgb(109, 109, 109);
     margin: 0 1em;
+    border-radius: 1em;
 }
 
-span#timeline-progress{
+span#timeline-progress, 
+span#vol-lvl{
     width: 20%;
     background-color: white;
+    border-radius: 1.5em 0 0 1.5em;
 }
 
 span.info{
