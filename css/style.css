@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.inline{
+    display: inline;
+}
+
 
 /* sezioni generiche */
 
@@ -33,13 +37,13 @@ h4{
 }
 
 h5{
-    display: inline;
+    /* display: inline; */
     color: white;
 }
 
 p{
     font-size: .8rem;
-    display: inline;
+    /* display: inline; */
 }
 
 li{
@@ -140,14 +144,16 @@ div.download-app a{
 }
 
 div.users{
-    height: 60px;
+    height: 40px;
     width: 100%;
     padding-top: .5rem;
 }
 
 div.users img{
-    width: 10%;
-    vertical-align: middle;
+/*     width: 15%;
+    height: 15%; */
+    transform: scale(.7);
+   /*  vertical-align: middle; */
     /* border: solid 1px yellow; */
     border-radius: 100%;
     background-color:rgb(109, 109, 109);
@@ -187,15 +193,19 @@ div.album{
     position: relative;
     height: 80vh;
     z-index: 0;
+    padding: 1em;
 }
 
 div.row{
     justify-content: flex-start;
+    margin-bottom: 70px;
+
 }
 
 div.album-cover{
 /*     object-fit: contain; */
     width: 200px;
+    height: 100%;
     /* height: 200px; */
     flex-direction: column;
     justify-content: center;
@@ -205,7 +215,6 @@ div.album-cover{
 
 div.album-cover img{
     width: 100%;
-
 }
 
 div.info-album{
@@ -213,6 +222,16 @@ div.info-album{
     align-self: center;
     height: 40px;
 } 
+
+div.album h3,
+div.album p{
+    margin-bottom: 1em;
+}
+
+div.album-cover img, 
+div.album-cover div.info-album h5{
+    margin-bottom: 1em;
+}
 
     /* !man at work */
 
