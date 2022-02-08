@@ -199,6 +199,7 @@ div.album{
 div.row{ 
     justify-content: flex-start;
     margin-bottom: 70px;
+    flex-wrap: wrap;
 }
 
 div.row:nth-of-type(4) div.album-cover img{
