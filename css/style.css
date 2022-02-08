@@ -313,12 +313,15 @@ div.download-app a:hover{
 /* id */
 
 #btn-playlist .prova i{
-    border: 1px solid black; /*! da cambiare */
-    background-color: grey;
+    /* background-color: grey; */
     font-size: 1.5rem;
     padding: .6rem;
     margin-right: .6rem;
     color: black;
+}
+
+div.prova i.fas {
+    background-color: rgb(163, 163, 163);
 }
 
 #btn-playlist{
@@ -334,3 +337,6 @@ div.download-app a:hover{
 }
 
 
+div.prova:hover{
+    filter: brightness(3); /* potevo usare brìghtness su tutti gli hover -.- */
+}
