@@ -210,6 +210,8 @@ div.options i{
 }
 
 span.btn-subscription{
+/*  width: 200px;
+    height: 50%; */
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
@@ -219,6 +221,7 @@ span.btn-subscription{
     margin-right:.5rem;
     border-radius: 25px;
     font-size: .8em;
+    transition-duration: 0.4s;
 }
 
 span.timeline{
@@ -300,7 +303,9 @@ div.download-app a:hover{
 }
 
 .btn-subscription:hover{
-    box-shadow:brown;
+    /* background-color: aqua; */
+    transform: scale(1.1);
+    filter: drop-shadow(2px 3px 5px rgb(244, 244, 245));
 }
 
 
