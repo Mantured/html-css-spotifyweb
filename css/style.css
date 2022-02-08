@@ -89,6 +89,8 @@ section.navbar-mediaplay{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: relative;
+    z-index: 2;
 
 }
 
@@ -177,8 +179,16 @@ div.btn-subscription{
 
     /* ! working progress */
 
+div.album{
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+    z-index: 0;
+}
+
 div.row{
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 div.album-cover{
