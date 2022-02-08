@@ -178,7 +178,7 @@ div.btn-subscription{
     /* ! working progress */
 
 div.row{
-    
+    justify-content: space-around;
 }
 
 div.album-cover{
@@ -192,12 +192,14 @@ div.album-cover{
 }
 
 div.album-cover img{
-    width: 100%; 
+    width: 100%;
+
 }
 
 div.info-album{
     flex-direction: column;
     align-self: center;
+    height: 40px;
 } 
 
     /* !man at work */
