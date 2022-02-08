@@ -50,7 +50,7 @@ a{
     text-decoration: none;
 }
 
-/* section */
+/*!section */
 
 section.lateral-navbar{
     width: 300px;
@@ -92,13 +92,10 @@ section.navbar-mediaplay{
 
 }
 
-#logo{
-    padding:1rem;
-    width: 180px;
-}
 
 
-/* div */
+
+/*! div */
 
 div.playlist, div.navbottom, .nav-head ul li{
     padding-left: 1rem;
@@ -163,6 +160,20 @@ div.header h4{
     padding: 0 .5rem;
 }
 
+div.btn-subscription{
+    /*  width: 200px;
+        height: 50%; */
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        border: 1px solid white;
+        padding: .8rem 2rem;
+        color: white;
+        margin-right:.5rem;
+        border-radius: 25px;
+        font-size: .8em;
+        transition-duration: 0.4s;
+    }
 
 
 div.replay{
@@ -195,9 +206,13 @@ div.options{
     align-items: center;
 }
 
-span.vol{
+div.info{
+    flex-direction: column;
+}
+
+div.vol{
     width: 100px;
-    height: 3px;
+    height: 6px;
     background-color:rgb(109, 109, 109);
     border-radius: 1em;
     
@@ -209,57 +224,41 @@ div.options i{
     color:white;
 }
 
-span.btn-subscription{
-/*  width: 200px;
-    height: 50%; */
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    border: 1px solid white;
-    padding: .8rem 2rem;
-    color: white;
-    margin-right:.5rem;
-    border-radius: 25px;
-    font-size: .8em;
-    transition-duration: 0.4s;
-}
 
-span.timeline{
+
+div.timeline{
     width: 400px;
-    height: 3px;
+    height: 6px;
     background-color: rgb(109, 109, 109);
     margin: 0 1em;
     border-radius: 1em;
 }
 
-span#timeline-progress, 
-span#vol-lvl{
+div#timeline-progress, 
+div#vol-lvl{
     width: 20%;
     background-color: white;
     border-radius: 1.5em 0 0 1.5em;
 }
 
-span.info{
-    flex-direction: column;
-}
 
-span.control{
+div.control{
     align-items: center;
     margin-bottom: 1em;
 }
 
-span.control i{
+div.control i{
     color:white;
     font-size: 1em;
     padding:0 1rem;
 }
-span.control i:nth-child(3){
+div.control i:nth-child(3){
     font-size: 2em;
 }
 
 
 
-/* nav */
+/*!nav */
 
 nav.nav-head ul{
     margin-bottom: .8rem; /* che sia il caso di creare un comando generico? */
@@ -283,7 +282,7 @@ nav.nav-playlist li{
 
 
 
-/* Hover */
+/*! Hover */
 nav.nav-head ul li:hover{
     border-left: 2.5px solid lime;
     filter:  brightness(3);
@@ -293,10 +292,9 @@ nav.nav-head ul li a:hover{
     color: white;
 }
 
-/* #btn-playlist .prova:hover{
-    color: white;
-    background-color: white;
-} */
+#btn-playlist:hover{
+    filter: brightness(3); /* potevo usare brìghtness su tutti gli hover -.- */
+}
 
 div.download-app a:hover{
     color:white;
@@ -308,19 +306,25 @@ div.download-app a:hover{
     filter: drop-shadow(2px 3px 5px rgb(244, 244, 245));
 }
 
+div#timeline-progress:hover{
+    background-color: rgb(72, 120, 44);
+}
+
 
 
 /* id */
 
-#btn-playlist .prova i{
+#logo{
+    padding:1rem;
+    width: 180px;
+}
+
+#btn-playlist i{
     /* background-color: grey; */
     font-size: 1.5rem;
     padding: .6rem;
     margin-right: .6rem;
     color: black;
-}
-
-div.prova i.fas {
     background-color: rgb(163, 163, 163);
 }
 
@@ -337,6 +341,31 @@ div.prova i.fas {
 }
 
 
-div.prova:hover{
-    filter: brightness(3); /* potevo usare brìghtness su tutti gli hover -.- */
+
+
+
+/* span.timeline i{
+    display: none;
+} */
+
+/* span.timeline:hover{
+    position: absolute;
+    color: aqua;
+    left:75px;
+    top:-3px;
+    font-size: 7pt;
+} */
+
+
+/* .relative{
+    position: relative;
+} */
+
+/*    .absolute{
+    position: absolute;
+    color: aqua;
+    left:75px;
+    top:-3px;
+    font-size: 7pt; 
 }
+*/

@@ -36,10 +36,9 @@
                 <div class="playlist">
                     <h4>playlist</h4><!-- uppercase-->
                     <div id="btn-playlist" class="flex">
-                        <div class="prova">
-                            <i class="fas fa-plus"></i>
-                            <a href="#"> Crea Playlist</a>
-                        </div>
+                        <i class="fas fa-plus"></i>
+                        <a href="#"> Crea Playlist</a>
+                    </div>
 <!--                         <i class="fas fa-plus"></i>
                         <a href="#"> Crea Playlist</a> -->
                     </div>
@@ -83,9 +82,9 @@
         <!-- dove abbiamo una nav-bar laterale con un logo in testa -->
         <section class="box">
             <div class="subscription flex">
-                <span class="btn-subscription flex">
+                <div class="btn-subscription flex">
                     <h4>effettua l'upgrade</h4>
-                </span>
+                </div>
             </div>
             <div class="album">
                 <div class="header flex">
@@ -109,33 +108,39 @@
         <!-- nav bar media player che sia bloccata  -->
         <section class="navbar-mediaplay flex">
             <div class="replay flex">
-                <img src="img/sinister.jpeg" alt="Sinister Album"><!-- img album  -->
-                <span class="info flex">
+                <div>
+                    <img src="img/sinister.jpeg" alt="Sinister Album"><!-- img album  -->
+                </div>
+                <div class="info flex">
                     <h5>Sinister</h5><!-- song album name -->
                     <p>Brano Nome</p>
-                </span>   
-                <i class="far fa-heart"></i><!-- like  -->
-                <i class="far fa-folder"></i><!-- folder -->
+                </div>
+                <div>
+                    <i class="far fa-heart"></i><!-- like  -->
+                    <i class="far fa-folder"></i><!-- folder -->
+                </div>
+
             </div>
 
             <!-- mediacontrol -->
             <div class="mediacontrol flex">
 
                 <!-- random indietro play next repeat -->
-                <span class="control flex">
+                <div class="control flex">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
                     <i class="far fa-play-circle"></i>
                     <i class="fas fa-step-forward"></i>
                     <i class="fas fa-redo"></i>
-                </span>
+                </div>
 
                 <!-- time line -->
                 <div class="time flex">
                     <p>0:25</p>
-                    <span class="timeline flex">
-                        <span id="timeline-progress"></span>
-                    </span>
+                    <div class="timeline flex relative">
+                        <div id="timeline-progress"></div>
+                        <!-- <i class="fas fa-circle absolute"></i> -->
+                    </div>
                     <p>4:35</p>
                 </div>
 
@@ -146,9 +151,9 @@
                 <i class="fas fa-list"></i><!-- in lista -->
                 <i class="fas fa-desktop"></i><!-- dispositivo riprod -->
                 <i class="fas fa-volume-up"></i><!-- volume barra -->
-                <span class="vol flex">
-                    <span id="vol-lvl"></span>
-                </span>
+                <div class="vol flex">
+                    <div id="vol-lvl"></div>
+                </div>
             </div>
         </section>
     </footer>
