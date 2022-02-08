@@ -175,6 +175,23 @@ div.btn-subscription{
         transition-duration: 0.4s;
     }
 
+div.album-cover{
+/*     object-fit: contain; */
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div.album-cover img{
+    width: 15%;
+    height: 15%;
+}
+
+div.info-album{
+    flex-direction: column;
+    text-align: center;
+} 
 
 div.replay{
     align-items: center;
@@ -281,38 +298,7 @@ nav.nav-playlist li{
 }
 
 
-
-/*! Hover */
-nav.nav-head ul li:hover{
-    border-left: 2.5px solid lime;
-    filter:  brightness(3);
-}
-
-nav.nav-head ul li a:hover{
-    color: white;
-}
-
-#btn-playlist:hover{
-    filter: brightness(3); /* potevo usare brìghtness su tutti gli hover -.- */
-}
-
-div.download-app a:hover{
-    color:white;
-}
-
-.btn-subscription:hover{
-    /* background-color: aqua; */
-    transform: scale(1.1);
-    filter: drop-shadow(2px 3px 5px rgb(244, 244, 245));
-}
-
-div#timeline-progress:hover{
-    background-color: rgb(72, 120, 44);
-}
-
-
-
-/* id */
+/*!id */
 
 #logo{
     padding:1rem;
@@ -339,6 +325,39 @@ div#timeline-progress:hover{
 #btn-playlist a{
     color:rgb(109, 109, 109);
 }
+
+
+/*! Hover */
+nav.nav-head ul li:hover{
+    border-left: 2.5px solid lime;
+    filter:  brightness(3);
+}
+
+nav.nav-head ul li a:hover{
+    color: white;
+}
+
+div#btn-playlist:hover{
+    filter: brightness(3); /* potevo usare brìghtness su tutti gli hover -.- */
+}
+
+div.download-app a:hover{
+    color:white;
+}
+
+div.btn-subscription:hover{
+    /* background-color: aqua; */
+    transform: scale(1.1);
+    filter: drop-shadow(2px 3px 5px rgb(244, 244, 245));
+}
+
+div#timeline-progress:hover{
+    background-color: rgb(72, 120, 44);
+}
+
+
+
+
 
 
 
