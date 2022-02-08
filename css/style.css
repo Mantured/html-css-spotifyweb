@@ -89,6 +89,8 @@ section.navbar-mediaplay{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+
+    /* !modifiche per la scroll bar */
     position: relative;
     z-index: 2;
 
@@ -183,7 +185,7 @@ div.album{
     width: 100%;
     overflow: auto;
     position: relative;
-    height: 100%;
+    height: 80vh;
     z-index: 0;
 }
 
