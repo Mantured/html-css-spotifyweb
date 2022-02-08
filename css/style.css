@@ -175,23 +175,34 @@ div.btn-subscription{
         transition-duration: 0.4s;
     }
 
+    /* ! working progress */
+
+div.row{
+    
+}
+
 div.album-cover{
 /*     object-fit: contain; */
-
+    width: 200px;
+    /* height: 200px; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
 }
 
 div.album-cover img{
-    width: 15%;
-    height: 15%;
+    width: 100%; 
 }
 
 div.info-album{
     flex-direction: column;
-    text-align: center;
+    align-self: center;
 } 
+
+    /* !man at work */
+
+
 
 div.replay{
     align-items: center;
