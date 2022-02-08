@@ -57,7 +57,7 @@ a{
 /*!section */
 
 section.lateral-navbar{
-    width: 300px;
+    width: 230px;
     height: 100%;
     background-color: black;
     line-height: 2rem;
@@ -70,7 +70,7 @@ section.lateral-navbar{
 }
 
 section.box{
-    width: 100%;
+    width: calc(100vw - 230px);
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
@@ -185,8 +185,6 @@ div.btn-subscription{
         transition-duration: 0.4s;
     }
 
-    /* ! working progress */
-
 div.album{
     width: 100%;
     overflow: auto;
@@ -196,11 +194,15 @@ div.album{
     padding: 1em;
 }
 
-div.row{
+div.row{ 
     justify-content: flex-start;
     margin-bottom: 70px;
-
 }
+
+div.row:nth-of-type(4) div.album-cover img{
+    border-radius: 100%;
+}
+
 
 div.album-cover{
 /*     object-fit: contain; */
@@ -208,9 +210,8 @@ div.album-cover{
     height: 100%;
     /* height: 200px; */
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     text-align: center;
+    margin-right: 1em;
 }
 
 div.album-cover img{
@@ -232,10 +233,6 @@ div.album-cover img,
 div.album-cover div.info-album h5{
     margin-bottom: 1em;
 }
-
-    /* !man at work */
-
-
 
 div.replay{
     align-items: center;
