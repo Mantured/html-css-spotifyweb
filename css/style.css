@@ -291,7 +291,7 @@ div.info{
 }
 
 div.vol{
-    width: 100px;
+    width: 6vw;
     height: 6px;
     background-color:rgb(109, 109, 109);
     border-radius: 1em;
@@ -307,7 +307,7 @@ div.options i{
 
 
 div.timeline{
-    width: 400px;
+    width: 30vw;
     height: 6px;
     background-color: rgb(109, 109, 109);
     margin: 0 1em;
@@ -463,6 +463,11 @@ div#timeline-progress:hover{
             align-items: center;
             margin-bottom: 15%;
         }
+
+        div.replay *{
+            margin-right: 0.5rem;
+        }
+
 }
 
 
@@ -530,6 +535,10 @@ div#timeline-progress:hover{
     .download-app a, 
     .users h5{
         display: none;
+    }
+
+    div.replay *{
+        margin-right: 0.3rem;
     }
 
 }
