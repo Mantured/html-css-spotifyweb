@@ -134,13 +134,14 @@ div.navbottom{
 
 div.download-app{
     height: 30px;
-    width: 100%;
-    border-bottom: 1px solid  rgb(109, 109, 109);;
-    padding-bottom: 2rem;
+    border-bottom: 1px solid  rgb(109, 109, 109);
+    align-items: center;
+
+
 }
 
 div.download-app img{
-    width: 6.5%;
+    width: 15px;
     vertical-align: middle;
     margin-right: .5rem;
 }
@@ -230,7 +231,7 @@ div.album-cover{
     flex-direction: column;
     text-align: center;
     margin-right: 1em;
-    margin-bottom: 8%;
+/*     margin-bottom: 8%; */
     flex-basis: calc(100% / 6);
 }
 
@@ -241,7 +242,8 @@ div.album-cover img{
 div.info-album{
     flex-direction: column;
     align-self: center;
-    height: 40px;
+    height: 100px;
+    width: 100%;
 } 
 
 div.album h2,
@@ -366,6 +368,10 @@ nav.nav-playlist li{
     width: 180px;
 }
 
+#logo-small{
+    display:none;
+}
+
 #btn-playlist i{
     /* background-color: grey; */
     font-size: 1.5rem;
@@ -420,6 +426,70 @@ div#timeline-progress:hover{
 
 /* mobile da 1 a 576*/
 @media (max-width: 576px) {  
+        div.album-cover{
+            flex-direction: column;
+            text-align: center;
+            margin-right: 1em;
+            margin-bottom: 8%;
+            flex-basis: calc(100% / 5);
+        }
+
+        section.box{
+            width: calc(100vw - 70px);
+        }
+
+        section.lateral-navbar{
+            width: 70px;
+            height: calc(100vh - 90px);
+            background-color: black;
+            line-height: 2rem;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        nav.nav-head ul{
+            margin-bottom: .8rem;
+        }
+        
+        nav.nav-head ul li img{
+            width: 40px;
+            vertical-align: middle;
+            filter:brightness(.5);
+        }
+        nav.nav-playlist li{
+            list-style-type: none;
+        }
+
+        div.download-app{
+            border-bottom: none;
+            justify-content: center;
+        }
+
+        div.download-app img{
+            width: 15px;
+
+        }
+        
+        div.users img{
+            width: 30px;
+        }
+
+
+        #logo-small{
+            display: inline-block;
+            width: 70px;
+            padding: 1rem;
+        }
+
+        #logo,
+        nav.nav-head ul li a, 
+        .playlist, .nav-playlist, 
+        .download-app a, 
+        .users h5{
+            display: none;
+        }
+
 
 }
 
@@ -433,11 +503,9 @@ div#timeline-progress:hover{
                 margin-right: 1em;
                 margin-bottom: 8%;
                 flex-basis: calc(100% / 5);
-/*             flex-grow: 0; */ /* !da valutare */
             }
 
         div.info-album{
-                transform: scale(.9); /* soluzione provvisoria */
             }
 
         div.row{
@@ -453,11 +521,10 @@ div#timeline-progress:hover{
         margin-right: 1em;
         margin-bottom: 8%;
         flex-basis: calc(100% / 3);
-        /* flex-grow: 0; */ /* !da valutare */
         }
         
         div.info-album{
-            transform: scale(.6); /* soluzione provvisoria */
+
         }
 
         div.row{
