@@ -205,8 +205,10 @@ div.album h2{
 
 div.row{ 
     justify-content: flex-start;
+    width: 100%;
+    /* flex-basis: calc(100% / 6); */
     /* margin-bottom: 70px; */
-    flex-wrap: wrap;
+   /*  flex-wrap: wrap; */
 }
 
 div.row:nth-of-type(4) div.album-cover img{
@@ -216,13 +218,14 @@ div.row:nth-of-type(4) div.album-cover img{
 
 div.album-cover{
 /*     object-fit: contain; */
-    width: 200px;
-    height: 100%;
+/*     width: 200px;
+    height: 100%; */
     /* height: 200px; */
     flex-direction: column;
     text-align: center;
     margin-right: 1em;
     margin-bottom: 8%;
+    flex-basis: calc(100% / 6);
 }
 
 div.album-cover img{
