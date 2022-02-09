@@ -89,7 +89,7 @@ section div.subscription{
 
 section.navbar-mediaplay{
     width: 100%;
-    height: calc(100% -8vh);
+    height: 90px;
     background-color: rgb(40, 40, 40);
     justify-content: space-between;
     align-items: center;
@@ -166,6 +166,9 @@ div.header{
     height: 40px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1.5em;
+    flex-wrap: wrap;
+    line-height: 30px;
 }
 
 div.header h4{
@@ -196,9 +199,13 @@ div.album{
     padding: 1em;
 }
 
+div.album h2{
+    color: white;
+}
+
 div.row{ 
     justify-content: flex-start;
-    margin-bottom: 70px;
+    /* margin-bottom: 70px; */
     flex-wrap: wrap;
 }
 
@@ -215,6 +222,7 @@ div.album-cover{
     flex-direction: column;
     text-align: center;
     margin-right: 1em;
+    margin-bottom: 8%;
 }
 
 div.album-cover img{
@@ -227,7 +235,7 @@ div.info-album{
     height: 40px;
 } 
 
-div.album h3,
+div.album h2,
 div.album p{
     margin-bottom: 1em;
 }
@@ -254,7 +262,6 @@ div.replay img{
 }
 
 div.mediacontrol{
-
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -402,3 +409,16 @@ div#timeline-progress:hover{
 
 /* !media query */
 
+/* mobile da 1 a 576*/
+@media (max-width: 576px) {  
+
+}
+
+/* Medium / tablet da 576 a 768 */
+@media (max-width: 768px) {  
+    
+}
+
+/* desktops, 992 in su) */
+@media (max-width: 992px) { 
+}
