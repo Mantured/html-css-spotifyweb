@@ -423,27 +423,50 @@ div#timeline-progress:hover{
 
 }
 
-/* Medium / tablet da 576 a 768 */
-@media (max-width: 768px) {  
 
-}
 
 /* desktops, 992 in su) */
 @media  screen and (max-width: 992px) { 
         div.album-cover{
-            flex-direction: column;
-            text-align: center;
-            margin-right: 1em;
-            margin-bottom: 8%;
-            flex-basis: calc(100% / 5);
+                flex-direction: column;
+                text-align: center;
+                margin-right: 1em;
+                margin-bottom: 8%;
+                flex-basis: calc(100% / 5);
 /*             flex-grow: 0; */ /* !da valutare */
             }
 
         div.info-album{
-            transform: scale(.9);
+                transform: scale(.9); /* soluzione provvisoria */
             }
 
-            div.row{
+        div.row{
                 flex-wrap: wrap;  
             }
+}
+
+/* Medium / tablet da 576 a 768 */
+@media screen and (max-width: 768px) {  
+    div.album-cover{
+        flex-direction: column;
+        text-align: center;
+        margin-right: 1em;
+        margin-bottom: 8%;
+        flex-basis: calc(100% / 3);
+        /* flex-grow: 0; */ /* !da valutare */
+        }
+        
+        div.info-album{
+            transform: scale(.6); /* soluzione provvisoria */
+        }
+
+        div.row{
+            flex-wrap: wrap;  
+        }
+
+        div.header{
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15%;
 }
