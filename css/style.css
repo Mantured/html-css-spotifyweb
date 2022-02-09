@@ -117,7 +117,7 @@ div.playlist, div.navbottom, .nav-head ul li{
     padding-left: 1rem;
 }
 
-.nav-playlist ul li{
+div.nav-playlist ul li{
     padding-left: 1rem;
 }
 
@@ -424,74 +424,6 @@ div#timeline-progress:hover{
 
 /* !media query */
 
-/* mobile da 1 a 576*/
-@media (max-width: 576px) {  
-        div.album-cover{
-            flex-direction: column;
-            text-align: center;
-            margin-right: 1em;
-            margin-bottom: 8%;
-            flex-basis: calc(100% / 5);
-        }
-
-        section.box{
-            width: calc(100vw - 70px);
-        }
-
-        section.lateral-navbar{
-            width: 70px;
-            height: calc(100vh - 90px);
-            background-color: black;
-            line-height: 2rem;
-            flex-direction: column;
-            justify-content: space-between;
-            
-        }
-
-        nav.nav-head ul{
-            margin-bottom: .8rem;
-        }
-        
-        nav.nav-head ul li img{
-            width: 40px;
-            vertical-align: middle;
-            filter:brightness(.5);
-        }
-        nav.nav-playlist li{
-            list-style-type: none;
-        }
-
-        div.download-app{
-            border-bottom: none;
-            justify-content: center;
-        }
-
-        div.download-app img{
-            width: 15px;
-
-        }
-        
-        div.users img{
-            width: 30px;
-        }
-
-
-        #logo-small{
-            display: inline-block;
-            width: 70px;
-            padding: 1rem;
-        }
-
-        #logo,
-        nav.nav-head ul li a, 
-        .playlist, .nav-playlist, 
-        .download-app a, 
-        .users h5{
-            display: none;
-        }
-
-
-}
 
 
 
@@ -502,10 +434,7 @@ div#timeline-progress:hover{
                 text-align: center;
                 margin-right: 1em;
                 margin-bottom: 8%;
-                flex-basis: calc(100% / 5);
-            }
-
-        div.info-album{
+                flex-basis: calc((100% / 4) - 1em);
             }
 
         div.row{
@@ -520,12 +449,9 @@ div#timeline-progress:hover{
         text-align: center;
         margin-right: 1em;
         margin-bottom: 8%;
-        flex-basis: calc(100% / 3);
+        flex-basis: calc((100% / 2) - 1em);
         }
         
-        div.info-album{
-
-        }
 
         div.row{
             flex-wrap: wrap;  
@@ -536,4 +462,75 @@ div#timeline-progress:hover{
             justify-content: center;
             align-items: center;
             margin-bottom: 15%;
+        }
 }
+
+
+/* mobile da 1 a 576*/
+@media (max-width: 576px) {  
+    
+    div.album-cover{
+        flex-direction: column;
+        text-align: center;
+        margin-right: 1em;
+        margin-bottom: 8%;
+        flex-basis: calc((100% / 2) - 1em);
+    }
+
+    section.box{
+        width: calc(100vw - 70px);
+    }
+
+    section.lateral-navbar{
+        width: 70px;
+        height: calc(100vh - 90px);
+        background-color: black;
+        line-height: 2rem;
+        flex-direction: column;
+        justify-content: space-between;
+        }
+
+    nav.nav-head ul{
+        margin-bottom: .8rem;
+    }
+    
+    nav.nav-head ul li img{
+        width: 40px;
+        vertical-align: middle;
+        filter:brightness(.5);
+    }
+    nav.nav-playlist li{
+        list-style-type: none;
+    }
+
+    div.download-app{
+        border-bottom: none;
+        justify-content: center;
+    }
+
+    div.download-app img{
+        width: 15px;
+
+    }
+    
+    div.users img{
+        width: 30px;
+    }
+
+
+    #logo-small{
+        display: inline-block;
+        width: 70px;
+        padding: 1rem;
+    }
+
+    #logo,
+    nav.nav-head ul li a, 
+    .playlist, .nav-playlist, 
+    .download-app a, 
+    .users h5{
+        display: none;
+    }
+
+}
+
