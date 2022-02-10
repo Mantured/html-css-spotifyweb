@@ -191,7 +191,7 @@ div.btn-subscription{
         border: 1px solid white;
         padding: .8rem 2rem;
         color: white;
-        margin-right:.5rem;
+        margin-right:1rem;
         border-radius: 25px;
         font-size: .8em;
         transition-duration: 0.4s;
@@ -298,11 +298,19 @@ div.vol{
     
 }
 
-
 div.options i{
     padding:0 .5rem;
     color:white;
 }
+div.vol i.fa-circle{
+    position: absolute;
+    left: 10%;
+    font-size: .8em;
+    bottom: -4px;
+    display: none;
+}
+
+
 
 
 
@@ -312,6 +320,15 @@ div.timeline{
     background-color: rgb(109, 109, 109);
     margin: 0 1em;
     border-radius: 1em;
+}
+
+div.timeline i.fa-circle{
+    position:absolute;
+    bottom: -4px;
+    left: 19%;
+    font-size: .8em;
+    color: white;
+    display: none;
 }
 
 div#timeline-progress, 
@@ -334,6 +351,19 @@ div.control i{
 }
 div.control i:nth-child(3){
     font-size: 2em;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -140%);
+    font-size: 4rem;
+    display: none;
 }
 
 
@@ -418,9 +448,39 @@ div.btn-subscription:hover{
     filter: drop-shadow(2px 3px 5px rgb(244, 244, 245));
 }
 
-div#timeline-progress:hover{
+.relative:hover .absolute{
+    display: inline; 
+    filter: brightness(3);
+}
+
+.relative:hover img{
+    filter: brightness(1.2);
+}
+
+div.timeline:hover #timeline-progress,
+div.vol:hover #vol-lvl{
     background-color: rgb(72, 120, 44);
 }
+
+div.timeline:hover i.fa-circle,
+div.vol:hover i.fa-circle{
+    display: inline;
+}
+
+div.control i.fa-play-circle:hover{
+    transform: scale(1.5);
+}
+
+div.rescue i:hover{
+    filter: brightness(3);
+}
+
+div.album div.header h4:hover{
+    filter: brightness(3);
+}
+
+
+
 
 /* !media query */
 
