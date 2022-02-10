@@ -27,13 +27,13 @@ body{
 
 main{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     display:flex;
 }
 
 footer{
-    width: 100vw;
-    height: 90px;
+    width: 100%;
+    height: 10vh;
 }
 
 
@@ -64,7 +64,7 @@ a{
 
 section.lateral-navbar{
     width: 230px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 10vh);
     background-color: black;
     line-height: 2rem;
     /* color: whitesmoke; */
@@ -84,7 +84,7 @@ section.box{
 /* vanno uniti */
 section div.subscription{
     width: 100%;
-    height: 8vh;
+    height: 60px;
     background-color: rgb(8, 11, 18);
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +95,7 @@ section div.subscription{
 
 section.navbar-mediaplay{
     width: 100%;
-    height: 90px;
+    height: fit-content;
     background-color: rgb(40, 40, 40);
     justify-content: space-between;
     align-items: center;
@@ -130,6 +130,7 @@ div.playlist h4{
 
 div.navbottom{
     margin-right: 1rem;
+    height: 74px;
 }
 
 div.download-app{
@@ -369,6 +370,10 @@ div.control i:nth-child(3){
 
 
 /*!nav */
+nav.nav-head{
+    height: 100vh;
+    overflow: hidden;
+}
 
 nav.nav-head ul{
     margin-bottom: .8rem; /* che sia il caso di creare un comando generico? */
@@ -384,6 +389,11 @@ nav.nav-head ul li a{
     text-decoration: none;
     /* color: whitesmoke; */
     color:rgb(109, 109, 109);
+}
+
+nav.nav-playlist ul{
+    overflow: auto;
+    height: 30vh;
 }
 
 nav.nav-playlist li{
