@@ -64,7 +64,7 @@ a{
 
 section.lateral-navbar{
     width: 230px;
-    height: calc(100vh - 10vh);
+    height: calc(100vh - 90px);
     background-color: black;
     line-height: 2rem;
     /* color: whitesmoke; */
